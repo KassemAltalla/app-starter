@@ -1,0 +1,381 @@
+/*
+ms-auto:go to the right
+me-auto: go to the left
+mx-auto: centered 
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Unica One',
+        sans-serif;
+}
+
+.nav-item {
+    margin-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20%;
+    color: rgb(105, 10, 194);
+}
+
+.navbar-brand span {
+    color: rgb(1, 203, 203);
+}
+
+.navbar-nav {
+    margin-right: 10%;
+}
+
+.first-part {
+    position: relative;
+    z-index: -2;
+    color: aliceblue;
+    /* height: 50%; */
+    background-image: url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.back-color {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to left, #4776E6, #8E54E9);
+    opacity: 0.7;
+}
+
+/* .home{
+    background-image: linear-gradient(red,blue),url(../images/home-img.png);
+} */
+
+
+.home {
+    z-index: 1;
+    /* height: 100vh; */
+    height: 100%;
+}
+
+
+
+.first-part img {
+    width: 80%;
+    height: 100%;
+}
+
+.home-img {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+
+h1 {
+    font-family: 'Unica One',
+        sans-serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home button {
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+.home p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome {
+    color: aliceblue;
+    width: 100%;
+    /* height: 60vh; */
+    background-color: rgba(0, 0, 0, 0.846);
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+h2 {
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.welcome hr {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.welcome-text {
+    padding-left: 80px;
+}
+
+.welcome-text h5 {
+    color: #4776E6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.card-text {
+    margin-top: 130px;
+    width: 200px;
+    z-index: 111;
+    position: absolute;
+    background-color: rgba(232, 232, 232, 0.866);
+    text-align: center;
+}
+
+.card-text h5 {
+    color: #4776E6;
+}
+
+.card-text p {
+    color: black;
+}
+
+.about {
+    background-color: rgb(64, 190, 228);
+    /* height: 60vh; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.about-text {
+    width: 100%;
+    height: 60vh;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+.about-text button {
+    background-color: black;
+    border-radius: 30px;
+    padding: 6px 20px;
+}
+
+.screen {
+    background-color: rgba(0, 0, 0, 0.846);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.screen-text {
+    /* width: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.screen-img {
+    width: 80%;
+    margin-bottom: 70px;
+}
+
+.screen-img img {
+    width: 90%;
+}
+
+.price {
+    background-color: #4776E6;
+    /* height: 100vh; */
+    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 50px;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+}
+
+.price-card {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.price-card h4 {
+    color: rgb(0, 200, 200);
+    font-size: 40px;
+}
+
+.price-card h6 {
+    color: #4776E6;
+    font-weight: 600;
+}
+
+.price-card p {
+    margin-top: 20px;
+    color: rgb(170, 170, 170);
+}
+
+.price-card button {
+    position: absolute;
+    margin-top: 335px;
+    width: 150px;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.newsletter {
+    position: relative;
+    background-image: url(../images/newsletter-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.newsletter .backcolor {
+    background-color: aqua;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.newsletter-text {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: aliceblue;
+}
+
+.newsletter-text p {
+    width: 60%;
+}
+
+.newsletter-text input {
+    background: none;
+    width: 400px;
+    margin-right: 30px;
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+}
+
+.newsletter-text input::placeholder {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.form input {
+    width: 90%;
+}
+
+.newsletter button {
+    width: 150px;
+    color: rgb(2, 220, 220);
+    font-weight: 600;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.846);
+    color: aliceblue;
+}
+
+.footer-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.footer-text p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.icons img {
+    margin-right: 30px;
+}
+
+

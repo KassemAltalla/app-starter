@@ -1,0 +1,1 @@
+linear-gradient(to left, #4776E6 , #8E54E9);
